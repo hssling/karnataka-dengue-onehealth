@@ -1,0 +1,15 @@
+======================================================================
+REVISION R1 - ANNUAL / LAGGED CLIMATE (Reviewer 3)
+======================================================================
+Annual rainfall records: 128 district-years (2021-2024). Departure available: 128.
+NOTE: No monthly dengue or monthly rainfall series exist in the routine record; sub-annual seasonality and short (weekly/monthly) lags cannot be estimated.
+
+--- Annual climate NB GLM (log-pop offset, year FE, cluster SE) ---
+  Same-year rainfall (mm)                    IRR=1.188 95%CI[1.006,1.404] p=0.043 (n=116)
+  Same-year rainfall departure (%)           IRR=0.970 95%CI[0.804,1.170] p=0.747 (n=116)
+  Prior-year (t-1) rainfall (mm)             IRR=1.163 95%CI[0.994,1.361] p=0.059 (n=116)
+  Prior-year (t-1) rainfall departure (%)    IRR=0.898 95%CI[0.751,1.072] p=0.233 (n=116)
+
+--- Rainfall adjusted for the other One Health layers (multivariable) ---
+  Same-year rainfall, fully adjusted        IRR=1.104 95%CI[0.864,1.410] p=0.430 (n=116)
+  Prior-year rainfall, fully adjusted       IRR=1.017 95%CI[0.824,1.257] p=0.873 (n=116)

@@ -1,0 +1,28 @@
+======================================================================
+REVISION R1 - GRADIENT BOOSTING FULL SPECIFICATION (Reviewer 4)
+======================================================================
+Panel: n=145 district-years, 29 districts, 9 predictors
+Predictors: LargeRuminant_pc, Livestock_pc, Poultry_pc, Vegetation_Condition_Index, Chik_Incidence, Female_Literacy, Clean_Fuel, Water_Improved, Sanitation_Improved
+Missing values in predictor matrix: 0 (complete-case panel; no imputation required).
+Target: log1p(dengue count). Software: scikit-learn 1.7.2.
+
+--- Fixed spec: GBR(n_estimators=400, learning_rate=0.05, max_depth=3, subsample=0.9, random_state=42), 5-fold shuffled KFold (seed 42) ---
+  Cross-validated R2 = -0.309 (SD 0.321); per-fold: -0.15, -0.94, -0.09, -0.26, -0.10
+  Interpretation: R2<0 means the model predicts worse out-of-sample than the training-mean benchmark (R2=0).
+
+--- Nested 5-fold CV with inner grid search (tuning nested within CV) ---
+  Nested CV R2 = +0.067 (SD 0.094); grid = 4 combos over 36 settings.
+  Reference OLS (same folds): CV R2 = +0.018 (SD 0.118)
+
+--- Permutation importance (full-fit; descriptive, not out-of-sample) ---
+  Chik_Incidence               +1.0095 (SD 0.1042)
+  Poultry_pc                   +0.1428 (SD 0.0170)
+  Water_Improved               +0.1290 (SD 0.0180)
+  Clean_Fuel                   +0.0748 (SD 0.0125)
+  Livestock_pc                 +0.0437 (SD 0.0057)
+
+--- Learning-curve probe (training-set fraction vs CV R2) ---
+   50% of panel (~72 obs): mean CV R2 = -0.436 (SD 0.210)
+   70% of panel (~101 obs): mean CV R2 = -0.361 (SD 0.204)
+   85% of panel (~123 obs): mean CV R2 = -0.315 (SD 0.191)
+  100% of panel (~145 obs): mean CV R2 = -0.297 (SD 0.108)

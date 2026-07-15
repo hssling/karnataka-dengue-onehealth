@@ -1,0 +1,161 @@
+District,Year,Dengue_Cases,Dengue_Deaths,Chik_Cases,Chik_Deaths
+Bangaluru Urban,2021,44,0,56,0
+Bangaluru Rural,2021,43,0,52,0
+Ramanagar,2021,41,2,34,0
+Kolar,2021,163,0,174,0
+Chikkaballapura,2021,114,0,47,0
+Tumakuru,2021,179,0,156,0
+Chitradurga,2021,229,0,99,0
+Davanagere,2021,275,0,84,0
+Shivamogga,2021,497,0,268,0
+Belagavi,2021,91,1,3,0
+Vijayapura,2021,348,0,231,0
+Bagalkote,2021,93,0,37,0
+Dharwad,2021,121,0,53,0
+Gadag,2021,228,0,53,0
+Haveri,2021,237,0,62,0
+Uttara kannada,2021,62,0,0,0
+Kalaburagi,2021,400,0,217,0
+Yadgir,2021,167,0,126,0
+Bidar,2021,138,0,17,0
+Ballari,2021,405,0,31,0
+Vijayanagara,2021,0,0,0,0
+Raichur,2021,115,0,0,0
+Koppal,2021,332,0,8,0
+Mysuru,2021,177,0,31,0
+Chamarajanagar,2021,57,1,3,0
+Mandya,2021,238,0,180,0
+Hassan,2021,42,0,9,0
+Dakshina Kannada,2021,283,1,1,0
+Udupi,2021,367,0,10,0
+Chikkamagaluru,2021,75,0,14,0
+Kodagu,2021,58,0,11,0
+BBMP,2021,1570,0,54,0
+Bangaluru Urban,2022,73,0,63,0
+Bangaluru Rural,2022,105,0,92,0
+Ramanagar,2022,156,0,28,0
+Kolar,2022,272,0,251,0
+Chikkaballapura,2022,280,2,14,0
+Tumakuru,2022,184,1,102,0
+Chitradurga,2022,433,0,143,0
+Davanagere,2022,239,0,76,0
+Shivamogga,2022,333,0,212,0
+Belagavi,2022,345,0,38,0
+Vijayapura,2022,475,2,433,0
+Bagalkote,2022,258,0,78,0
+Dharwad,2022,229,1,33,0
+Gadag,2022,137,0,72,0
+Haveri,2022,129,0,44,0
+Uttara kannada,2022,62,0,0,0
+Kalaburagi,2022,367,0,78,0
+Yadgir,2022,112,0,15,0
+Bidar,2022,22,0,13,0
+Ballari,2022,190,0,17,0
+Vijayanagara,2022,0,0,0,0
+Raichur,2022,83,0,1,0
+Koppal,2022,205,0,25,0
+Mysuru,2022,757,0,98,0
+Chamarajanagar,2022,213,0,9,0
+Mandya,2022,294,0,97,0
+Hassan,2022,221,1,135,0
+Dakshina Kannada,2022,385,0,2,0
+Udupi,2022,505,2,10,0
+Chikkamagaluru,2022,184,0,16,0
+Kodagu,2022,59,0,2,0
+BBMP,2022,2313,0,14,0
+Bangaluru Urban,2023,64,0,60,0
+Bangaluru Rural,2023,66,0,31,0
+Ramanagar,2023,127,0,6,0
+Kolar,2023,235,0,3,0
+Chikkaballapura,2023,185,0,77,0
+Tumakuru,2023,347,1,0,0
+Chitradurga,2023,254,0,88,0
+Davanagere,2023,348,0,0,0
+Shivamogga,2023,431,0,71,0
+Belagavi,2023,254,0,114,0
+Vijayapura,2023,344,0,0,0
+Bagalkote,2023,131,0,138,0
+Dharwad,2023,206,0,59,0
+Gadag,2023,135,0,24,0
+Haveri,2023,158,0,30,0
+Uttara kannada,2023,89,0,22,0
+Kalaburagi,2023,725,0,0,0
+Yadgir,2023,89,0,0,0
+Bidar,2023,154,0,47,0
+Ballari,2023,89,0,0,0
+Vijayanagara,2023,61,0,143,0
+Raichur,2023,166,0,28,0
+Koppal,2023,228,0,12,0
+Mysuru,2023,688,0,6,0
+Chamarajanagar,2023,253,0,22,0
+Mandya,2023,334,0,3,0
+Hassan,2023,263,1,3,0
+Dakshina Kannada,2023,532,0,22,0
+Udupi,2023,635,2,210,0
+Chikkamagaluru,2023,261,0,0,0
+Kodagu,2023,161,1,16,0
+BBMP,2023,8609,0,34,0
+Bangaluru Urban,2024,618,0,196,0
+Bangaluru Rural,2024,227,0,69,0
+Ramanagar,2024,425,0,4,0
+Kolar,2024,542,1,89,0
+Chikkaballapura,2024,369,1,6,0
+Tumakuru,2024,935,0,127,0
+Chitradurga,2024,905,0,59,0
+Davanagere,2024,708,2,82,0
+Shivamogga,2024,710,2,285,0
+Belagavi,2024,598,0,60,0
+Vijayapura,2024,505,0,281,0
+Bagalkote,2024,328,0,19,0
+Dharwad,2024,867,2,22,0
+Gadag,2024,397,1,12,0
+Haveri,2024,776,2,79,0
+Uttara kannada,2024,219,0,2,0
+Kalaburagi,2024,1223,0,281,0
+Yadgir,2024,136,0,21,0
+Bidar,2024,485,0,202,0
+Ballari,2024,437,0,3,0
+Vijayanagara,2024,300,0,0,0
+Raichur,2024,148,0,22,0
+Koppal,2024,361,0,12,0
+Mysuru,2024,940,1,15,0
+Chamarajanagar,2024,163,0,163,0
+Mandya,2024,1028,0,14,0
+Hassan,2024,874,2,10,0
+Dakshina Kannada,2024,523,0,64,0
+Udupi,2024,598,0,2,0
+Chikkamagaluru,2024,755,0,31,0
+Kodagu,2024,273,0,19,0
+BBMP,2024,14950,3,176,0
+Bangaluru Urban,2025,177,0,161,0
+Bangaluru Rural,2025,109,0,14,0
+Ramanagar,2025,146,0,30,0
+Kolar,2025,167,0,79,0
+Chikkaballapura,2025,57,0,0,0
+Tumakuru,2025,212,0,55,0
+Chitradurga,2025,136,0,43,0
+Davanagere,2025,53,0,22,0
+Shivamogga,2025,147,0,64,0
+Belagavi,2025,69,0,26,0
+Vijayapura,2025,169,0,152,0
+Bagalkote,2025,49,0,9,0
+Dharwad,2025,155,0,12,0
+Gadag,2025,118,0,3,0
+Haveri,2025,72,0,3,0
+Uttara kannada,2025,54,0,1,0
+Kalaburagi,2025,479,0,41,0
+Yadgir,2025,60,0,8,0
+Bidar,2025,57,0,30,0
+Ballari,2025,186,0,0,0
+Vijayanagara,2025,55,0,6,0
+Raichur,2025,39,0,1,0
+Koppal,2025,82,0,10,0
+Mysuru,2025,116,0,90,0
+Chamarajanagar,2025,23,0,2,0
+Mandya,2025,143,0,11,0
+Hassan,2025,43,0,11,0
+Dakshina Kannada,2025,180,0,2,0
+Udupi,2025,153,0,5,0
+Chikkamagaluru,2025,25,0,2,0
+Kodagu,2025,20,0,0,0
+BBMP,2025,3428,0,119,0

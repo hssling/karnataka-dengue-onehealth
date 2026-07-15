@@ -1,0 +1,11 @@
+numpy
+pandas
+scipy
+statsmodels>=0.14
+scikit-learn>=1.7
+geopandas>=1.1
+libpysal>=4.14
+esda>=2.10
+spreg>=1.9
+matplotlib
+Pillow

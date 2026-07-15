@@ -1,0 +1,37 @@
+======================================================================
+REVISION R1 - SPATIAL AUTOCORRELATION (Reviewer 2)
+======================================================================
+Panel: n=145 district-years, 29 districts
+
+Full multi-layer NB GLM refitted: n=145, alpha=0.212
+
+Districts in panel: 29; in shapefile: 31
+Panel districts NOT matched to a polygon: none
+Districts with both geometry and data (spatial analysis set): 29
+Queen-contiguity weights built: 29 areas, 0 island(s).
+
+--- Global Moran's I (queen weights, 9999 permutations) ---
+  Moran's I [pooled mean NB Pearson residual]: I=-0.066, E[I]=-0.036, z=-0.23, p(perm)=0.4305
+  Moran's I [pooled mean raw incidence (reference)]: I=+0.041, E[I]=-0.036, z=+0.65, p(perm)=0.2519
+
+--- Per-year Moran's I on NB Pearson residuals ---
+  2021: I=+0.195, z=+1.85, p(perm)=0.0420 (n=29)
+  2022: I=+0.055, z=+0.74, p(perm)=0.2195 (n=29)
+  2023: I=+0.227, z=+2.11, p(perm)=0.0262 (n=29)
+  2024: I=+0.113, z=+1.18, p(perm)=0.1208 (n=29)
+  2025: I=-0.038, z=-0.00, p(perm)=0.4700 (n=29)
+
+--- Local Moran's I (LISA) on pooled residuals, hotspot count ---
+  Significant local clusters (p<0.05): {'HH': 1, 'LH': 1, 'LL': 2, 'HL': 0}  (total sig=4)
+
+--- spreg spatial regressions, 2024 cross-section (log dengue incidence) ---
+  OLS diagnostics (Moran's I on OLS residuals, LM tests):
+    Moran's I (resid): -0.032, p=0.6627
+    LM-lag p=0.9154; LM-error p=0.8096; robust LM-lag p=0.7456; robust LM-error p=0.6966
+  ML spatial-error model: chik beta=+0.030, lambda=-0.083
+  ML spatial-lag model: chik beta=+0.023, rho=-0.028
+
+--- Panel NB GLM + spatially-lagged neighbour dengue incidence covariate ---
+  (spatial-lag panel n=145 district-years across 29 districts with polygons)
+  z_Chik_Incidence           IRR=1.150 95%CI[1.067,1.239] p=0.0003
+  z_SpatialLag_Incidence     IRR=1.235 95%CI[0.991,1.538] p=0.0598
