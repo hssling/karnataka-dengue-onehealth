@@ -1,0 +1,100 @@
+Panel: n=145 district-years, 29 districts
+Panel n=145, districts=29, years=[np.int64(2021), np.int64(2022), np.int64(2023), np.int64(2024), np.int64(2025)]
+Districts: ['bagalkote', 'ballari', 'belagavi', 'bengaluru rural', 'bidar', 'chamarajanagar', 'chikkaballapura', 'chikkamagaluru', 'chitradurga', 'dakshina kannada', 'davanagere', 'dharwad', 'gadag', 'hassan', 'haveri', 'kalaburagi', 'kodagu', 'kolar', 'koppal', 'mandya', 'mysuru', 'raichur', 'ramanagar', 'shivamogga', 'tumakuru', 'udupi', 'uttara kannada', 'vijayapura', 'yadgir']
+
+Predictor mean / SD (natural units):
+  LargeRuminant_pc             mean=   217.765 sd=    61.990
+  Livestock_pc                 mean=   547.881 sd=   253.775
+  Poultry_pc                   mean=  1309.693 sd=  1552.754
+  Vegetation_Condition_Index   mean=     0.763 sd=     0.092
+  Chik_Incidence               mean=     3.191 sd=     4.144
+  Female_Literacy              mean=    75.434 sd=    10.028
+  Clean_Fuel                   mean=    75.362 sd=    13.749
+  Water_Improved               mean=    94.797 sd=     4.454
+  Sanitation_Improved          mean=    74.052 sd=    18.036
+
+Primary multi-layer NB GLM (2021-2025):
+  LargeRuminant_pc             IRR 0.928 (0.791-1.088) p=0.3569 q=0.5354 n=145
+  Livestock_pc                 IRR 1.094 (0.961-1.247) p=0.1755 q=0.3948 n=145
+  Poultry_pc                   IRR 1.029 (0.880-1.203) p=0.7238 q=0.8143 n=145
+  Vegetation_Condition_Index   IRR 0.252 (0.062-1.021) p=0.0535 q=0.2408 n=145
+  Chik_Incidence               IRR 1.121 (1.030-1.220) p=0.0081 q=0.0726 n=145
+  Female_Literacy              IRR 1.260 (0.919-1.728) p=0.1514 q=0.3948 n=145
+  Clean_Fuel                   IRR 0.904 (0.733-1.116) p=0.3472 q=0.5354 n=145
+  Water_Improved               IRR 0.936 (0.736-1.190) p=0.5886 q=0.7568 n=145
+  Sanitation_Improved          IRR 0.994 (0.667-1.482) p=0.9761 q=0.9761 n=145
+
+Single-layer NB GLMs (2021-2025):
+  LargeRuminant_pc             IRR 0.959 (0.831-1.107) p=0.5702
+  Livestock_pc                 IRR 0.935 (0.797-1.095) p=0.4044
+  Poultry_pc                   IRR 1.019 (0.900-1.154) p=0.7707
+  Vegetation_Condition_Index   IRR 0.241 (0.144-0.401) p=0.0000
+  Chik_Incidence               IRR 1.147 (1.063-1.237) p=0.0004
+  Female_Literacy              IRR 1.159 (0.992-1.354) p=0.0632
+  Clean_Fuel                   IRR 1.006 (0.886-1.143) p=0.9243
+  Water_Improved               IRR 0.876 (0.733-1.047) p=0.1449
+  Sanitation_Improved          IRR 1.077 (0.902-1.286) p=0.4148
+
+Spearman dengue vs chik incidence rho=0.295 p=3.23e-04
+
+Without 2025 (n=116), z restandardised:
+  LargeRuminant_pc             single 0.981 (0.852-1.130) p=0.7922 | multi 0.929 (0.791-1.091) p=0.3683
+  Livestock_pc                 single 0.926 (0.781-1.098) p=0.3784 | multi 1.086 (0.927-1.271) p=0.3057
+  Poultry_pc                   single 0.979 (0.834-1.149) p=0.7941 | multi 0.944 (0.785-1.137) p=0.5459
+  Vegetation_Condition_Index   single 0.172 (0.097-0.305) p=0.0000 | multi 0.275 (0.062-1.215) p=0.0885
+  Chik_Incidence               single 1.144 (1.056-1.239) p=0.0010 | multi 1.145 (1.046-1.253) p=0.0032
+  Female_Literacy              single 1.171 (0.995-1.378) p=0.0581 | multi 1.176 (0.851-1.624) p=0.3253
+  Clean_Fuel                   single 1.007 (0.883-1.149) p=0.9173 | multi 0.851 (0.679-1.066) p=0.1596
+  Water_Improved               single 0.875 (0.723-1.058) p=0.1681 | multi 0.978 (0.759-1.260) p=0.8650
+  Sanitation_Improved          single 1.108 (0.936-1.311) p=0.2338 | multi 1.173 (0.783-1.756) p=0.4390
+  (z from full panel) chik single {'irr': 1.1334899862221783, 'lo': 1.0518133319884058, 'hi': 1.2215090927180952, 'p': 0.0010239392673004521, 'n': 116} 
+  live single {'irr': 0.9263424224750236, 'lo': 0.7813193912857881, 'hi': 1.0982836126270143, 'p': 0.3784435909662074, 'n': 116}
+   multi(fullz) LargeRuminant_pc             {'irr': 0.928925264128345, 'lo': 0.7910938669733628, 'hi': 1.0907708710184838, 'p': 0.36828012870699245, 'n': 116}
+   multi(fullz) Livestock_pc                 {'irr': 1.085844045393348, 'lo': 0.9275231526425303, 'hi': 1.2711890668788541, 'p': 0.30571381619352844, 'n': 116}
+   multi(fullz) Poultry_pc                   {'irr': 0.944530769211281, 'lo': 0.784846977278464, 'hi': 1.1367035865773911, 'p': 0.5458838576918466, 'n': 116}
+   multi(fullz) Vegetation_Condition_Index   {'irr': 0.30387326429192424, 'lo': 0.07715819308371004, 'hi': 1.1967486155520746, 'p': 0.08853965334232901, 'n': 116}
+   multi(fullz) Chik_Incidence               {'irr': 1.13462508757233, 'lo': 1.0432554690556894, 'hi': 1.2339969715316172, 'p': 0.003192822980785787, 'n': 116}
+   multi(fullz) Female_Literacy              {'irr': 1.175704741668207, 'lo': 0.8515693793925554, 'hi': 1.6232167020461905, 'p': 0.32530826815950153, 'n': 116}
+   multi(fullz) Clean_Fuel                   {'irr': 0.8510109248745606, 'lo': 0.6796747776826104, 'hi': 1.0655384281363547, 'p': 0.159568361413282, 'n': 116}
+   multi(fullz) Water_Improved               {'irr': 0.9782749584356727, 'lo': 0.7594259682391512, 'hi': 1.260191163229937, 'p': 0.8650073720712355, 'n': 116}
+   multi(fullz) Sanitation_Improved          {'irr': 1.1725857828583006, 'lo': 0.7834876960320396, 'hi': 1.7549189669791403, 'p': 0.43898502195760647, 'n': 116}
+
+Vijayanagara reported: {'Dengue_Cases': {2021: 0, 2022: 0, 2023: 61, 2024: 300, 2025: 55}, 'Chik_Cases': {2021: 0, 2022: 0, 2023: 143, 2024: 0, 2025: 6}}
+Merged Ballari+Vijayanagara: chik single {'irr': 1.134711352467996, 'lo': 1.0526140206927692, 'hi': 1.2232117643391685, 'p': 0.000973228097548767, 'n': 145}
+  multi LargeRuminant_pc             {'irr': 0.9242674380359377, 'lo': 0.7869231037104297, 'hi': 1.085582940678113, 'p': 0.3373101041476746, 'n': 145} q=0.607
+  multi Livestock_pc                 {'irr': 1.1050018413369, 'lo': 0.9716916454808373, 'hi': 1.2566013869077968, 'p': 0.12796527625643783, 'n': 145} q=0.384
+  multi Poultry_pc                   {'irr': 1.0280456295788463, 'lo': 0.8815335776232034, 'hi': 1.1989081792502192, 'p': 0.7243938771565415, 'n': 145} q=0.815
+  multi Vegetation_Condition_Index   {'irr': 0.230547251375728, 'lo': 0.05697053091696965, 'hi': 0.9329741931731038, 'p': 0.039663584736787084, 'n': 145} q=0.178
+  multi Chik_Incidence               {'irr': 1.1070198865382268, 'lo': 1.0163112627905144, 'hi': 1.20582450874965, 'p': 0.019758934206229272, 'n': 145} q=0.178
+  multi Female_Literacy              {'irr': 1.2346031324607674, 'lo': 0.8953234913356266, 'hi': 1.7024515825091324, 'p': 0.19861215757351092, 'n': 145} q=0.447
+  multi Clean_Fuel                   {'irr': 0.9191976798411706, 'lo': 0.7455391463435523, 'hi': 1.1333065188719695, 'p': 0.43032574284791225, 'n': 145} q=0.645
+  multi Water_Improved               {'irr': 0.9218370590240185, 'lo': 0.7251385764464139, 'hi': 1.1718912646386408, 'p': 0.5062866486614501, 'n': 145} q=0.651
+  multi Sanitation_Improved          {'irr': 0.9947958208049561, 'lo': 0.6683917194407669, 'hi': 1.480596925885026, 'p': 0.979483193586937, 'n': 145} q=0.979
+Ballari incidence merged: [[2021.0, 16.5], [2022.0, 7.7], [2023.0, 6.1], [2024.0, 30.0], [2025.0, 9.8]]
+Livestock pc_offset       {'irr': 0.9346968892259562, 'lo': 0.7974974391262709, 'hi': 1.0954997870411338, 'p': 0.4043874975753018, 'n': 145}
+Livestock pc_nooffset     {'irr': 0.9541594532114329, 'lo': 0.8106487238501479, 'hi': 1.1230761677249441, 'p': 0.5725847994271724, 'n': 145}
+Livestock total_nooffset  {'irr': 1.117001535214128, 'lo': 0.9044690835792978, 'hi': 1.3794749343262984, 'p': 0.30416986780581057, 'n': 145}
+Livestock total_offset    {'irr': 0.8750413289177581, 'lo': 0.7276230863522762, 'hi': 1.052326873179291, 'p': 0.1561587296114046, 'n': 145}
+Spearman district total cases vs total livestock rho=0.180 p=0.351
+
+Rainfall files cover years: [np.int64(2020), np.int64(2021), np.int64(2022), np.int64(2023), np.int64(2024), np.int64(2025)] rows 189
+Annual normal 2024 vs 2025 file: max abs diff (mm) = 1.0 over 32 districts
+Panel district-years lacking same-year rainfall: 0
+  Rain_mm        {'irr': 1.1599942005615222, 'lo': 0.9907886378788846, 'hi': 1.3580964636585298, 'p': 0.06504800181525885, 'n': 145, 'dengue_years': [2021, 2022, 2023, 2024, 2025], 'sd': 1111.304516869503, 'adj': {'irr': 1.0636411612200432, 'lo': 0.860911415018411, 'hi': 1.3141102558354714, 'p': 0.5674184268577351, 'n': 145}}
+  Rain_dep       {'irr': 0.9966644482532253, 'lo': 0.8425222297608738, 'hi': 1.1790074935991157, 'p': 0.9689096606853351, 'n': 145, 'dengue_years': [2021, 2022, 2023, 2024, 2025], 'sd': 30.018404316371473}
+  Rain_mm_lag1   {'irr': 1.1654115426072076, 'lo': 0.9947414665496388, 'hi': 1.3653638752520387, 'p': 0.05813165075664611, 'n': 145, 'dengue_years': [2021, 2022, 2023, 2024, 2025], 'sd': 1072.5123623683553, 'adj': {'irr': 1.0999261869058063, 'lo': 0.8886240792540916, 'hi': 1.3614729162602495, 'p': 0.38153707868370634, 'n': 145}, 'rain_years': [2020, 2021, 2022, 2023, 2024]}
+  Rain_dep_lag1  {'irr': 0.9175501953482719, 'lo': 0.7822991128232288, 'hi': 1.07618473188003, 'p': 0.29025110483592687, 'n': 145, 'dengue_years': [2021, 2022, 2023, 2024, 2025], 'sd': 29.929967747203786, 'rain_years': [2020, 2021, 2022, 2023, 2024]}
+
+Ten-layer model (nine layers + same-year rainfall), n=145:
+  Rain_mm                      IRR 1.064 (0.861-1.314) p=0.5674
+  LargeRuminant_pc             IRR 0.921 (0.775-1.094) p=0.3489
+  Livestock_pc                 IRR 1.097 (0.966-1.245) p=0.1544
+  Poultry_pc                   IRR 1.029 (0.879-1.204) p=0.7216
+  Vegetation_Condition_Index   IRR 0.277 (0.077-0.995) p=0.0490
+  Chik_Incidence               IRR 1.122 (1.031-1.221) p=0.0076
+  Female_Literacy              IRR 1.237 (0.899-1.701) p=0.1907
+  Clean_Fuel                   IRR 0.921 (0.740-1.148) p=0.4646
+  Water_Improved               IRR 0.967 (0.725-1.289) p=0.8181
+  Sanitation_Improved          IRR 0.971 (0.638-1.477) p=0.8892
+
+Saved R3_reanalysis_results.json
