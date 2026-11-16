@@ -1,5 +1,7 @@
 # Karnataka Dengue & One Health — Reproducibility Repository
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24282678.svg)](https://doi.org/10.5281/zenodo.24282678)
+
 Code and public-domain data for the study:
 
 > **From Data to Action: The 2024 Dengue Surge in Karnataka, India, and the Limits of Routine One Health Data for Early Warning, 2021–2025.**
@@ -116,7 +118,11 @@ The study used aggregated, de-identified, public-domain secondary data. Institut
 
 ## 8. Citation
 
-If you use this repository, please cite the article (details to be added on publication) and this repository (release v1.1).
+If you use this repository, please cite the article (details to be added on publication) and the archived release:
+
+> Siddalingaiah HS. Karnataka dengue One Health: data and code (v1.1.1). Zenodo; 2026. doi: [10.5281/zenodo.24282678](https://doi.org/10.5281/zenodo.24282678)
+
+The concept DOI [10.5281/zenodo.24282677](https://doi.org/10.5281/zenodo.24282677) always resolves to the latest version. GitHub's *Cite this repository* button uses `CITATION.cff`.
 
 ## 9. License
 

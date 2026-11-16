@@ -10,5 +10,6 @@ authors:
 license: MIT
 repository-code: "https://github.com/hssling/karnataka-dengue-onehealth"
 version: "1.1.1"
+doi: "10.5281/zenodo.24282678"
 date-released: "2026-11-16"
 keywords: [dengue, One Health, chikungunya, surveillance, early warning, Karnataka]
