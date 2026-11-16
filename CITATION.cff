@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the article and this software archive."
+title: "Karnataka dengue One Health: data and code for 'From Data to Action: The 2024 Dengue Surge in Karnataka, India, and the Limits of Routine One Health Data for Early Warning, 2021–2025'"
+type: software
+authors:
+  - family-names: "H S"
+    given-names: "Siddalingaiah"
+    orcid: "https://orcid.org/0000-0002-4771-8285"
+    affiliation: "Department of Community Medicine, Shridevi Institute of Medical Sciences and Research Hospital, Tumkur, Karnataka, India"
+license: MIT
+repository-code: "https://github.com/hssling/karnataka-dengue-onehealth"
+version: "1.1.1"
+date-released: "2026-11-16"
+keywords: [dengue, One Health, chikungunya, surveillance, early warning, Karnataka]
