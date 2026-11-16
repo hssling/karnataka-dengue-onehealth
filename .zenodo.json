@@ -1,0 +1,15 @@
+{
+  "title": "Karnataka dengue One Health: data and code for 'From Data to Action: The 2024 Dengue Surge in Karnataka, India, and the Limits of Routine One Health Data for Early Warning, 2021–2025'",
+  "upload_type": "software",
+  "description": "Code and public-domain data reproducing every estimate, table and figure in the article 'From Data to Action: The 2024 Dengue Surge in Karnataka, India, and the Limits of Routine One Health Data for Early Warning, 2021–2025' (One Health Bulletin). Includes the verified district dengue and chikungunya panel (29 districts, 2021–2025), One Health layers (20th Livestock Census, NFHS-5, KSNDMC district rainfall 2020–2025, vegetation condition index), the Karnataka district shapefile, and Python scripts for the multi-layer Negative Binomial model, sensitivity analyses, spatial-dependence tests, lagged-climate models and gradient boosting.",
+  "creators": [
+    {
+      "name": "Siddalingaiah, H S",
+      "affiliation": "Department of Community Medicine, Shridevi Institute of Medical Sciences and Research Hospital, Tumkur, Karnataka, India",
+      "orcid": "0000-0002-4771-8285"
+    }
+  ],
+  "license": "MIT",
+  "keywords": ["dengue", "One Health", "chikungunya", "surveillance", "early warning", "Karnataka", "India", "Negative Binomial", "spatial analysis", "machine learning"],
+  "language": "eng"
+}
